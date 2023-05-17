@@ -1,0 +1,10 @@
+;表示的是聚焦到打开的窗口
+ControlFocus("打开","","Edit1")
+;讲焦点处于该窗口的等待位置
+WinWait("CLASS:#32770","",10)
+;Windows中此次的路径只需要使用单斜杠
+ControlSetText("打开","","Edit1","D:\附件01.txt")
+;表示的是毫秒
+Sleep(2000)
+;点击打开按钮
+ControlClick("打开","","Button1");
