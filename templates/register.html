@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei';
+            width: 99%;
+            height: 99%;
+        }
+
+        .Context:after {
+            content: "*";
+            color: red;
+            position: absolute;
+            top: 50px;
+            left: 6px;
+        }
+
+        .t1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            trasform: translate(-50%)
+        }
+
+        .tx00 {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .tx01 {
+            text-align: right;
+            width: 500px;
+            height: 34px;
+            margin: 11px 0;
+        }
+
+        .tx1 {
+            width: 360px;
+            height: 30px;
+        }
+
+        .Required {
+            width: 130px;
+        }
+
+        .H02 {
+            text-align: center;
+            background-color: rgb(233, 240, 248);
+        }
+
+        .tac {
+            text-align: center;
+        }
+
+        .btx {
+            color: red;
+        }
+
+        .wbk01 {
+            border: 1px dashed #000;
+            border-color: rgb(0, 102, 204);
+            width: 800px;
+            margin: auto;
+        }
+
+        .wbk02 {
+            border-style: solid;
+            border: 1px solid #000000;
+            border-color: rgb(182, 182, 182);
+            color: rgb(0, 102, 204);
+        }
+
+        .wbk03 {
+            border: 1px dashed #000;
+            border-color: rgb(0, 102, 204);
+            width: 800px;
+            margin: auto;
+        }
+
+        .city01 {
+            width: 114px;
+            height: 28px;
+        }
+
+        .inp00 {
+            text-align: center;
+        }
+
+        .inp01 {
+            background: rgb(209, 237, 251);
+            border:1px solid rgb(164, 164, 164);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="T1">
+        <div class="H02">Terminal Automation User Register</div>
+        <div>
+            <fieldset class=wbk01>
+                <legend class="wbk02">user message</legend>
+                <form action="">
+                    <div class="tx00">
+                        <div class="tx01">
+                            <span class="btx">*</span>
+                            <span class="Required"><label for="usrnm">Account: </label></span>
+                            <span><input class="tx1" type="text" id="usrnm" name="username" placeholder="input your username"></span>
+                        </div>
+                        <div class="tx01">
+                            <span class="btx">*</span>
+                            <span><label for="pswd">Password: </label></span>
+                            <span><input class="tx1" type="password" id="pswd" name="password"
+                                    placeholder="input your password"></span>
+                        </div>
+                        <div class="tx01">
+                            <span class="btx">*</span>
+                            <span><label for="jcname">Realname</label></span>
+                            <span><input class="tx1" type="text" id="jcname" name="jczname"
+                                    placeholder="input your realname"></span>
+                        </div>
+                        <div class="tx01">
+                            <span class="btx">*</span>
+                            <span><label for="jcname1">Email:</label></span>
+                            <span><input class="tx1" type="text" id="jcname1" name="jczname1"
+                                    placeholder="input your email"></span>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="wbk03">
+                <legend class="wbk02">Fill in instructions:</legend>
+                <ol>1.After registration is completed, it needs to be reviewed by the backend administrator.</ol>
+                <ol>2.Please send an email to "Jeremydeng@techtrex.com" for feedback or suggestions on issues.</ol>
+            </fieldset>
+        </div>
+        <div class="inp00">
+            <input class="inp01" type="reset" value="重置按钮" />
+            <input class="inp01" type="submit" value="提交按钮" />
+        </div>
+    </div>
+</body>
+
+</html>
